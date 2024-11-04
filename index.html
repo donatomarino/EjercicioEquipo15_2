@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <form action="">
+    <form onsubmit = "enviarMensaje(event);">
         <div>
             <label for="">Nombre</label>
-            <input type="text" name="nombre">
+            <input type="text" name="nombre" id="nombre">
         </div>
 
         <div>
@@ -39,15 +40,18 @@
 
         <div>
             <label>Intereses</label>
-            <input type="checkbox" name="intereses" id=""> Mercado Inmobiliario
-            <input type="checkbox" name="intereses" id=""> Bolsa
-            <input type="checkbox" name="intereses" id=""> Bienes estatales
+            <input type="radio" name="intereses"> Mercado Inmobiliario
+            <input type="radio" name="intereses"> Bolsa
+            <input type="radio" name="intereses"> Bienes estatales
         </div>
 
         <div>
             <label for="">Password</label>
             <input type="password" name="password">
         </div>
+        
+        <button type="submit" onclick="validar()">Validar datos</button>
+        <p id="mensajeError"></p>
     </form>
 </body>
 
