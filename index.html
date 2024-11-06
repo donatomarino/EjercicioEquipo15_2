@@ -5,54 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 
 <body>
+    <h1>Formulario de registro</h1>
     <form onsubmit = "enviarMensaje(event);">
         <div>
             <label for="">Nombre</label>
             <input type="text" name="nombre" id="nombre">
+            <p class="mensaje"></p>
         </div>
 
         <div>
             <label for="">Apellidos</label>
-            <input type="text" name="apellidos">
+            <input type="text" name="apellidos" id = 'apellido'>
+            <p class="mensaje"></p>
         </div>
 
         <div>
             <label for="">Dirección</label>
-            <input type="text" name="dirección">
+            <input type="text" name="direccion" id="direccion">
+            <p class="mensaje"></p>
         </div>
 
         <div>
             <label for="">Email</label>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email">
+            <p class="mensaje"></p>
         </div>
 
         <div><label for="">Confirmación Email</label>
-            <input type="email" name="confirmaEmail">
+            <input type="email" name="confirmaEmail" id="confirmaEmail">
+            <p class="mensaje"></p>
         </div>
 
         <div><label for="">DNI</label>
-            <input type="text" name="dni">
+            <input type="text" name="dni" id="dni">
+            <p class="mensaje"></p>
         </div>
 
         <div>
             <label>Intereses</label>
-            <input type="radio" name="intereses"> Mercado Inmobiliario
-            <input type="radio" name="intereses"> Bolsa
-            <input type="radio" name="intereses"> Bienes estatales
+            <input type="text" name="interes" id="intereses">
+            <p class="mensaje"></p>
         </div>
 
         <div>
             <label for="">Password</label>
-            <input type="password" name="password">
+            <input type="password" name="password" id="password">
+            <p class="mensaje"></p>
         </div>
         
         <button type="submit" onclick="validar()">Validar datos</button>
-        <p id="mensajeError"></p>
     </form>
+    <p id="mensajeCorrecto"></p>
 </body>
 
 </html>

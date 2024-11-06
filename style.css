@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fuente general para la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+/* encabezado */
+h1 {
+    text-align: center;
+    color: #12344a; 
+    margin-bottom: 30px;
+    font-size: 3rem; 
+    font-weight: 800; 
+    letter-spacing: 2px; 
+    text-transform: uppercase; 
+    font-family: 'Poppins', sans-serif; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15); 
+    transition: color 0.3s ease, transform 0.2s ease; 
+}
+/* formulario */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #a9adac;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* Todos los grupos de campos */
+div {
+    margin-bottom: 15px;
+}
+
+/* etiquetas */
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/*  inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* inputs en foco */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #5957e0;
+    outline: none;
+}
+/* mensajes de error */
+.mensaje {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* botón de envío */
+button[type="submit"] {
+    background-color: #384254;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* hover para el botón */
+button[type="submit"]:hover {
+    background-color: #4945a0;
+}
+
+/* Estilo para los campos requeridos */
+input[required] {
+    background-color: #ffffffbb;
+}
+
+/* Estilo mensaje Intereses */
+#mensajeCorrecto{
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+    margin: 10px auto;
+    width: 600px;
+}
+
