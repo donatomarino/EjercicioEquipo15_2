@@ -49,7 +49,7 @@ function validar() {
 
     // // //Validar Email
     if (!validarEmail(email.value)) {
-        mensaje[3].textContent = 'El email tiene que contener una @ obligatoriamente.';
+        mensaje[3].textContent = 'El formato email no es correcto.';
         return;
     } else {
         mensaje[3].innerHTML = '';
@@ -193,8 +193,10 @@ function validarEmail(email) {
     email = email.trim(); // Utilizamos el metodo trim para que se quiten los espacios, si hay, al principio y al final de la cadena
 
     if (email.includes('@')) {
-        return true; // Devolvemos true si incluye '@'
-    } return false; // Devolvemos false si no incluye '@'
+        if(email.includes('.')){
+            return true; // Devolvemos true si incluye '@' y '.'
+        }
+    } return false; // Devolvemos false si no incluye '@' y '.'
 }
 
 
