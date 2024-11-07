@@ -90,6 +90,7 @@ function validar() {
     //Validar password
     if(!validarPassword(password.value)){
         mensaje[7].textContent = 'La password tiene que estar formado por minimo 8 caracteres, maximo 20, contener almenos una mayuscula, una minuscula y dos numeros.'
+        return;
     } else{
         mensaje[7].innerHTML = '';
     }
@@ -206,7 +207,7 @@ function validarConfirmaEmail(email, confirmaEmail) {
     } return false; // Devolvemos false si no coincide
 }
 
-// Validación Intereses
+// Validación DNI
 function validarDNI(dni) {
     // Trasformamos el dni en cadena String
     let DniStr = dni.toString();
