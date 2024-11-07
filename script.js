@@ -240,7 +240,7 @@ function validarDNI(dni) {
 }
 
 // Validamos intereses 
-function validarIntereses(intereses, guardados) {
+function validarIntereses(intereses) {
     //Se declara una constante interesesValidos, que contiene un arreglo de intereses predefinidos. Estos son los únicos intereses aceptables.
     const interesesValidos = ["mercado inmobiliario", "bolsa", "bienes estatales"];
     let miArrayCorrectos = [];
